@@ -1,0 +1,13 @@
+body{
+    background: yellow;
+    font: normal 20pt arial;
+    text-align: center;
+    color:rgb(218, 77, 12);
+}
+
+canvas#gradient {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
