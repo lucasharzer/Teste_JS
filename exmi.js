@@ -13,5 +13,3 @@ leitor.question('Digite a primeira nota? ', function(answer) {
     console.log(`A média entre ${n1} e ${n2} é igual a ${(n1+n2)/2}.`)
     });    
 });
-
-
