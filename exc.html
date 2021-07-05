@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS 4 OPERAÇÕES 👇</title>
+    <style>
+        body {
+            background: linear-gradient( rgb(12, 153, 153), rgb(107, 196, 196));
+            font:normal 20pt Arial;
+            color:rgba(0, 0, 0, 0.733);
+            text-align: center;
+        }
+        input#txtn1 {
+            height: 37px;
+            border-radius: 15px;
+            line-height: 15px;
+            margin: auto;
+            box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        }
+        input#txtn2 {
+            height: 37px;
+            border-radius: 15px;
+            line-height: 15px;
+            margin: auto;
+            box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        }
+        input#so {
+            height: 30px;
+            width: 30px;
+        }
+        input#su {
+            height:30px;
+            width: 30px;
+        }
+        input#mu {
+            height:30px;
+            width: 30px;
+        }
+        input#di {
+            height:30px;
+            width: 30px;
+        }
+        div#res {
+            background: white;
+            width: 550px;
+            text-align: center;
+            height: 40px;
+            padding: 5px;
+            margin: auto;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>4 operações fundamentais:</h1>
+    <p>
+        <input type="number" name="txtn1" id="txtn1"> ?
+        <input type="number" name="txtn2" id="txtn2"> 
+    </p>
+    <p>
+        <input type="button" value="+" onclick="somar()" id="so">
+        <input type="button" value="-" onclick="subtrair()" id="su" >
+        <input type="button" value="x" onclick="multiplicar()" id="mu" >
+        <input type="button" value="/" onclick="dividir()" id="di">
+    </p>
+       
+    <div id="res">
+        Calculando...
+    </div>
+    <div id="fim">
+        ...
+    </div>
+    <footer>
+        <p>&copy; JavaScript</p>
+    </footer>
+    <script>
+        window.alert('Vamos calcular!')
+        function somar() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let resu = document.getElementById('res')
+            resu.innerHTML = `O resultado da operação entre ${tn1} e ${tn2} é ${tn1+tn2}`
+        }
+        function subtrair() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let resu = document.getElementById('res')
+            resu.innerHTML = `O resultado da operação entre ${tn1} e ${tn2} é ${tn1-tn2}`
+        }
+        function multiplicar() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let resu = document.getElementById('res')
+            resu.innerHTML = `O resultado da operação entre ${tn1} e ${tn2} é ${tn1*tn2}`
+        }
+        function dividir() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let resu = document.getElementById('res')
+            resu.innerHTML = `O resultado da operação entre ${tn1} e ${tn2} é ${tn1/tn2}`
+        }
+        let fim = document.getElementById('fim')
+        fim.innerHTML = '👍'
+    </script>
+</body>
+</html>
